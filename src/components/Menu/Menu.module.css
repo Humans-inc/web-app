@@ -6,6 +6,7 @@
   height: 86px;
   background-color: #000000;
   padding: 20px;
+  z-index: 100;
 }
 .buttonAdd {
   width: 67px;

@@ -1,0 +1,61 @@
+.transaction {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 26px;
+}
+.transaction svg {
+  flex-shrink: 0;
+}
+.nameWrap {
+  margin-left: 16px;
+  position: relative;
+  top: 3px;
+}
+.name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.4);
+}
+.dataWrap {
+  margin-left: auto;
+}
+.sumIncome {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+  color: #0ad26c;
+  margin-bottom: 4px;
+}
+.sumExpense {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.account {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.4);
+}
