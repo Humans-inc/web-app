@@ -4,6 +4,7 @@ import Main from './pages/Main/Main.jsx';
 import Analitics from './pages/Analitics/Analitics.jsx';
 import Table from './pages/Table/Table.jsx';
 import Settings from './pages/Settings/Settings.jsx';
+import AccountPage from './pages/AccountPage/AccountPage';
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route
           path='/settings'
           element={<Settings />}
+        />
+        <Route
+          path='/one-account'
+          element={<AccountPage />}
         />
       </Routes>
     </div>

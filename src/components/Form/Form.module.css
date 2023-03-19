@@ -1,0 +1,110 @@
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 110;
+  display: flex;
+  align-items: flex-end;
+}
+.form {
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+  padding: 36px 24px;
+  background-color: #ffffff;
+  border-radius: 32px 32px 0px 0px;
+}
+.title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-bottom: 36px;
+}
+.btnClose {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: transparent;
+  border: none;
+}
+.input {
+  display: block;
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 16px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: -0.03em;
+  color: #000000;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+.input::placeholder,
+.textarea::placeholder {
+  opacity: 0.2;
+}
+.textAreaWrap {
+  position: relative;
+}
+.textarea {
+  min-height: 108px;
+  display: block;
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 16px;
+  padding-right: 50px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: -0.03em;
+  color: #000000;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+.textAreaLength {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.2;
+}
+.btnSubmit {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 13px;
+  border: none;
+  background: #181820;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+.btnSubmit:disabled {
+  background: #eeeeee;
+  color: #C1C1C3;
+}

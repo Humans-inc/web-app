@@ -1,10 +1,11 @@
 import styles from './Account.module.css';
+import { NavLink } from 'react-router-dom';
 
 const Account = ({ name, money, description }) => {
   return (
     <div className={styles.account}>
       <h4 className={styles.name}>{name}</h4>
-      <button className={styles.menu}>
+      <NavLink to='/one-account' className={styles.menu}>
         <svg
           width='24'
           height='24'
@@ -25,7 +26,7 @@ const Account = ({ name, money, description }) => {
             fill='black'
           />
         </svg>
-      </button>
+      </NavLink>
       <p className={styles.money}>{money}₽</p>
       <p className={styles.description}>{description}</p>
     </div>

@@ -1,9 +1,17 @@
 import Account from '../Account/Account';
 import styles from './Accounts.module.css';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
-const Accounts = ({ accountsList }) => {
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import Form from '../Form/Form';
+
+const Accounts = () => {
+  const accountsList = useSelector((state) => state.accounts.accounts);
+
   let [isVisible, setIsVisible] = useState(false);
+
   return (
     <div className={styles.accounts}>
       <h2 className={styles.title}>Мои счета</h2>
@@ -13,32 +21,37 @@ const Accounts = ({ accountsList }) => {
           setIsVisible(!isVisible);
         }}
       >
-        {isVisible ? 'Закрыть' : 'Добавить'}
+        Добавить
       </button>
-      <div className={styles.accountsList}>
-        {accountsList.length &&
-          accountsList.map((account) => (
-            <Account
-              key={account.id}
-              name={account.name}
-              money={account.money}
-              description={account.description}
-            />
-          ))}
-      </div>
-      {isVisible && (
-        <form action=''>
-        <input type='text' />
-        <button
-          onClick={() => {
-            setIsVisible(!isVisible);
-          }}
+      {/* accounts list */}
+      {accountsList.length ? (
+        <Swiper
+          spaceBetween={8}
+          slidesPerView={1.5}
+          centeredSlides={false}
+          className={styles.accountsList}
         >
-          Submit
-        </button>
-      </form>
+          {accountsList.map((account) => (
+            <SwiperSlide key={account.id}>
+              <Account
+                name={account.name}
+                money={account.money}
+                description={account.description}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <div className={styles.noAccounts}>Нет счетов</div>
       )}
 
+      {/* form */}
+      {isVisible && (
+        <Form
+          isVisible={isVisible}
+          setIsVisible={setIsVisible}
+        />
+      )}
     </div>
   );
 };

@@ -1,12 +1,16 @@
 import styles from './Balance.module.css';
+import { useSelector } from 'react-redux';
 
-const Balance = ({ balanceInteger, balanceFraction, income, expense }) => {
+const Balance = () => {
+
+  const balance = useSelector((state) => state.balance);
+
   return (
     <div className={styles.balance}>
       <span className={styles.subtitle}>Ваш баланс</span>
       <h1 className={styles.count}>
-        ₽ {balanceInteger}
-        <span>.{balanceFraction}</span>
+        ₽ {balance.balance}
+        {/* <span>.{balance.balanceFraction}</span> */}
       </h1>
       <div className={styles.wrap}>
         <div className={styles.income}>
@@ -29,7 +33,7 @@ const Balance = ({ balanceInteger, balanceFraction, income, expense }) => {
               fill='white'
             />
           </svg>
-          <span className={styles.sum}>{income}₽</span>
+          <span className={styles.sum}>{balance.income}₽</span>
           <span className={styles.descr}>Доход</span>
         </div>
         <div className={styles.expense}>
@@ -54,7 +58,7 @@ const Balance = ({ balanceInteger, balanceFraction, income, expense }) => {
               fill='white'
             />
           </svg>
-          <span className={styles.sum}>{expense}₽</span>
+          <span className={styles.sum}>{balance.expense}₽</span>
           <span className={styles.descr}>Расход</span>
         </div>
       </div>

@@ -9,4 +9,6 @@ body * {
 #root .active {
   color: #ffffff;
 }
-
+.swiper-slide {
+  width: 208px !important;
+}
