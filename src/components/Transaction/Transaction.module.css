@@ -9,7 +9,7 @@
   flex-shrink: 0;
 }
 .transaction svg rect {
-  fill: var(--tg-theme-bg-color);
+  fill: var(--tg-theme-secondary-bg-color);
 }
 .transaction svg path {
   fill: var(--tg-theme-text-color);

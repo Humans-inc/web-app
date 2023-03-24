@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: 86px;
-  background-color: var(--tg-theme-bg-color);
+  background-color: var(--tg-theme-secondary-bg-color);
   padding: 20px;
   z-index: 100;
 }

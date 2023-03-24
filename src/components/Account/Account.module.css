@@ -1,5 +1,5 @@
 .account {
-  background: var(--tg-theme-bg-color);
+  background: var(--tg-theme-secondary-bg-color);
   border-radius: 21px;
   padding: 15px;
   position: relative;
