@@ -57,7 +57,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
+/* :root {
   --tg-theme-bg-color: #17212B;
   --tg-theme-text-color: #f5f5f5;
   --tg-theme-hint-color: #708499;
@@ -65,9 +65,10 @@
   --tg-theme-button-color: #5288c1;
   --tg-theme-button-text-color: #ffffff;
   --tg-theme-secondary-bg-color: #232e3c;
-}
+} */
 body * {
   font-family: 'Factor A', sans-serif;
+  /* padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); */
 }
 #root .active {
   color: var(--tg-theme-text-color);

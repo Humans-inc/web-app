@@ -4,8 +4,9 @@
   left: 0;
   right: 0;
   height: 86px;
-  background-color: var(--tg-theme-bg-color);
+  background-color: var(--tg-theme-secondary-bg-color);
   padding: 20px;
+  padding-bottom: calc(20px + env(safe-area-inset-bottom));
   z-index: 100;
 }
 .buttonAdd {
