@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  bottom: var(0 - var(--sab));
+  bottom: calc(0 - var(--sab));
   left: 0;
   right: 0;
   height: 86px;
