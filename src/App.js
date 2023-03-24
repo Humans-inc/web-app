@@ -6,6 +6,10 @@ import Table from './pages/Table/Table.jsx';
 import Settings from './pages/Settings/Settings.jsx';
 import AccountPage from './pages/AccountPage/AccountPage';
 
+const tg = window.Telegram.WebApp;
+
+tg.expand();
+
 function App() {
   return (
     <div className='App'>
