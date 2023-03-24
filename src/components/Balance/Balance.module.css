@@ -7,7 +7,9 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.02em;
-  color: rgba(30, 30, 30, 0.4);
+  /*color: rgba(30, 30, 30, 0.4);*/
+  color: var(--tg-theme-text-color);
+  opacity: 0.4;
 }
 .count {
   font-style: normal;
@@ -15,7 +17,8 @@
   font-size: 48px;
   line-height: 58px;
   letter-spacing: -0.03em;
-  color: #1e1e1e;
+  /*color: #1e1e1e;*/
+  color: var(--tg-theme-text-color);
   margin-bottom: 26px;
 }
 .count span {
