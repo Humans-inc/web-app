@@ -9,7 +9,7 @@
   letter-spacing: -0.02em;
   /*color: rgba(30, 30, 30, 0.4);*/
   color: var(--tg-theme-text-color);
-  opacity: 0.4;
+  opacity: 0.6;
 }
 .count {
   font-style: normal;
@@ -27,11 +27,11 @@
   font-size: 48px;
   line-height: 58px;
   letter-spacing: -0.03em;
-  color: #1e1e1e;
-  opacity: 0.4;
+  color: var(--tg-theme-text-color);
+  opacity: 0.6;
 }
 .wrap {
-  background: #f0f0f0;
+  background: var(--tg-theme-bg-color);
   border-radius: 106.83px;
   padding: 15px;
   display: grid;
@@ -50,13 +50,25 @@
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
+.income svg rect {
+  fill: var(--tg-theme-button-color);
+}
+.income svg path {
+  fill: var(--tg-theme-button-text-color);
+}
+.expense svg rect {
+  fill: var(--tg-theme-secondary-bg-color);
+}
+.expense svg path {
+  fill: var(--tg-theme-button-text-color);
+}
 .sum {
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.02em;
-  color: #1e1e1e;
+  color: var(--tg-theme-text-color);
   align-self: end;
 }
 .descr {
@@ -67,6 +79,7 @@
   display: flex;
   align-items: flex-end;
   letter-spacing: -0.01em;
-  color: #888888;
+  color: var(--tg-theme-text-color);
   align-self: start;
+  opacity: 0.6;
 }

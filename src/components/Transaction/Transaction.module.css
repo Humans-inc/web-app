@@ -8,6 +8,12 @@
 .transaction svg {
   flex-shrink: 0;
 }
+.transaction svg rect {
+  fill: var(--tg-theme-bg-color);
+}
+.transaction svg path {
+  fill: var(--tg-theme-text-color);
+}
 .nameWrap {
   margin-left: 16px;
   position: relative;
@@ -19,7 +25,7 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.03em;
-  color: #000000;
+  color: var(--tg-theme-text-color);
   margin-bottom: 4px;
 }
 .date {
@@ -28,7 +34,8 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -0.03em;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--tg-theme-text-color);
+  opacity: 0.6;
 }
 .dataWrap {
   margin-left: auto;
@@ -39,7 +46,7 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.03em;
-  color: #0ad26c;
+  color: var(--tg-theme-link-color);
   margin-bottom: 4px;
 }
 .sumExpense {
@@ -48,7 +55,7 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.03em;
-  color: #000000;
+  color: var(--tg-theme-text-color);
   margin-bottom: 4px;
 }
 .account {
@@ -57,5 +64,6 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -0.03em;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--tg-theme-text-color);
+  opacity: 0.6;
 }

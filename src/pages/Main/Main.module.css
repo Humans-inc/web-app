@@ -1,4 +1,4 @@
 .main {
   padding: 132px 16px;
-  background: var();
+  background: var(--tg-theme-secondary-bg-color);
 }

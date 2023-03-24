@@ -1,6 +1,5 @@
 .accounts {
   border-radius: 30px;
-  background: #f0f0f0;
   margin: 0 -16px 40px;
   padding: 26px 16px;
   position: relative;
@@ -12,7 +11,7 @@
   font-size: 24px;
   line-height: 29px;
   letter-spacing: -0.03em;
-  color: #1e1e1e;
+  color: var(--tg-theme-text-color);
   margin-bottom: 26px;
 }
 .buttonAdd {
@@ -27,7 +26,7 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -0.03em;
-  color: #1e1e1e;
+  color: var(--tg-theme-text-color);
 }
 /* .accountsList {
   display: flex;
@@ -35,5 +34,5 @@
 .noAccounts {
   text-align: center;
   font-size: 12px;
-  color: #C1C1C3;
+  color: var(--tg-theme-hint-color);
 }

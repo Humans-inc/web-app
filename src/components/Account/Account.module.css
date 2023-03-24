@@ -1,5 +1,5 @@
 .account {
-  background: #ffffff;
+  background: var(--tg-theme-bg-color);
   border-radius: 21px;
   padding: 15px;
   position: relative;
@@ -15,7 +15,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  color: #000000;
+  color: var(--tg-theme-text-color);
 }
 .menu {
   position: absolute;
@@ -26,6 +26,9 @@
   border: none;
   background: transparent;
 }
+.menu svg path {
+  fill: var(--tg-theme-text-color);
+}
 .money {
   margin-top: auto;
   font-style: normal;
@@ -33,7 +36,7 @@
   font-size: 24px;
   line-height: 29px;
   letter-spacing: -0.03em;
-  color: #000000;
+  color: var(--tg-theme-text-color);
   margin-bottom: 8px;
 }
 .description {
@@ -42,6 +45,7 @@
   font-size: 13px;
   line-height: 16px;
   letter-spacing: -0.03em;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--tg-theme-text-color);
+  opacity: 0.6;
   max-width: 65%;
 }
