@@ -3,16 +3,16 @@ import styles from './Transactions.module.css';
 
 import { useSelector } from 'react-redux';
 
-const Transactions = () => {
+const Transactions = ({accountPage}) => {
 
   const transactionsList = useSelector((state) => state.transactions.transactions);
 
   return (
-    <div className={styles.transactions}>
+    <div className={!accountPage ? styles.transactions : styles.transactionsAccount} >
       <h2 className={styles.title}>Транзакции</h2>
       <button
         className={styles.getAll}
-        disabled={transactionsList.length < 10 ? true : false}
+        disabled={transactionsList.length < 10}
       >
         См. все
       </button>
@@ -26,6 +26,7 @@ const Transactions = () => {
               date={item.date}
               sum={item.sum}
               account={item.account}
+              accountPage={accountPage}
             />
           ))
         ) : (

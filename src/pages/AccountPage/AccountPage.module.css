@@ -1,0 +1,64 @@
+.accountPage {
+  background: var(--tg-theme-bg-color);
+  min-height: 100vh;
+  color: var(--tg-theme-text-color);
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.accountHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-bottom: 38px;
+}
+.btnBack {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.btnBack svg path {
+  fill: var(--tg-theme-text-color);
+}
+.accountName {
+  max-width: 60%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: var(--tg-theme-text-color);
+}
+.btnChange {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--tg-theme-text-color);
+  border: none;
+  background: transparent;
+  height: 24px;
+}
+.balance {
+  margin-bottom: 30px;
+}
+.count {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: var(--tg-theme-text-color);
+}
+.subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: var(--tg-theme-text-color);
+  opacity: 0.6;
+}

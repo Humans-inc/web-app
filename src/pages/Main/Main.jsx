@@ -16,7 +16,7 @@ const Main = () => {
       <Balance />
       <Accounts />
 
-      <Transactions />
+      <Transactions accountPage={false} />
     </div>
   );
 };

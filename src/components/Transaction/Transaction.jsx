@@ -1,8 +1,12 @@
 import styles from './Transaction.module.css';
 
-const Transaction = ({ name, date, type, account, sum }) => {
+const Transaction = ({ name, date, type, account, sum, accountPage }) => {
   return (
-    <div className={styles.transaction}>
+    <div
+      className={
+        !accountPage ? styles.transaction : `${styles.transactionAccount} ${styles.transaction}`
+      }
+    >
       {type === 'income' ? (
         <svg
           width='40'
@@ -42,8 +46,7 @@ const Transaction = ({ name, date, type, account, sum }) => {
           <path
             d='M15.8333 15C15.3731 15 15 15.3731 15 15.8333C15 16.2936 15.3731 16.6667 15.8333 16.6667H22.0943L15.2441 23.5774C14.9186 23.9028 14.9186 24.4305 15.2441 24.7559C15.5695 25.0814 16.0972 25.0814 16.4226 24.7559L23.3333 17.7841V24.1667C23.3333 24.6269 23.7064 25 24.1667 25C24.6269 25 25 24.6269 25 24.1667V15.8333C25 15.3731 24.6269 15 24.1667 15H15.8333Z'
             fill='black'
-          />          
-
+          />
         </svg>
       )}
       <div className={styles.nameWrap}>

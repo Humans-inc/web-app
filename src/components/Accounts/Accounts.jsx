@@ -50,6 +50,9 @@ const Accounts = () => {
         <Form
           isVisible={isVisible}
           setIsVisible={setIsVisible}
+          title='Добавить счет'
+          btn='Добавить'
+          text='Счет успешно добавлен'
         />
       )}
     </div>

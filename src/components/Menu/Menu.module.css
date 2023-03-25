@@ -8,6 +8,7 @@
   padding: 20px;
   padding-bottom: calc(20px + var(--sab));
   z-index: 100;
+  border-top: 1px solid var(--tg-theme-bg-color);
 }
 .buttonAdd {
   width: 67px;
@@ -63,5 +64,5 @@
   flex-shrink: 0;
   display: block;
   margin-bottom: 5px;
-  background: #D9D9D9;
+  background: #d9d9d9;
 }

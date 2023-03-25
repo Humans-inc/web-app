@@ -1,12 +1,59 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom';
+import Form from '../../components/Form/Form';
+import styles from './AccountPage.module.css';
+import { useState } from 'react';
+import Transactions from '../../components/Transactions/Transactions';
+import Snackbar from '../../components/Snackbar/Snackbar';
 
 const AccountPage = () => {
-  return (
-    <div>
-      <NavLink to='/'>Назад</NavLink>
-      One account page
-    </div>
-  )
-}
+  let [isVisible, setIsVisible] = useState(false);
 
-export default AccountPage
+  return (
+    <div className={styles.accountPage}>
+      <div className={styles.accountHeader}>
+        <NavLink
+          to='/'
+          className={styles.btnBack}
+        >
+          <svg
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              d='M12.7071 5.70711C13.0976 5.31658 13.0976 4.68342 12.7071 4.29289C12.3166 3.90237 11.6834 3.90237 11.2929 4.29289L4.29289 11.2929C3.90237 11.6834 3.90237 12.3166 4.29289 12.7071L11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071C13.0976 19.3166 13.0976 18.6834 12.7071 18.2929L7.41421 13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H7.41421L12.7071 5.70711Z'
+              fill='black'
+            />
+          </svg>
+        </NavLink>
+        <div className={styles.accountName}>Тинькофф</div>
+        <button
+          className={styles.btnChange}
+          onClick={() => {
+            setIsVisible(!isVisible);
+          }}
+        >
+          Изм.
+        </button>
+      </div>
+      <div className={styles.balance}>
+        <div className={styles.count}>40 000 ₽</div>
+        <div className={styles.subtitle}>Деньги от продажи обучения</div>
+      </div>
+      <Transactions accountPage={true} />
+      {isVisible && (
+        <Form
+          isVisible={isVisible}
+          setIsVisible={setIsVisible}
+          title='Изменить счет'
+          btn='Сохранить'
+          text='Счет успешно изменен'
+        />
+      )}
+    </div>
+  );
+};
+
+export default AccountPage;
